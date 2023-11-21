@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="dark:bg-neutral-800 dark:text-white pb-8 text-sm">
+        <div class="w-full flex justify-center py-8">
+            <button
+                id="theme-toggle"
+                class="p-2 rounded-full text-white bg-neutral-800 dark:text-neutral-800	 dark:bg-gray-100"
+            >
+                Toggle theme
+            </button>
+        </div>
+        <div class="flex justify-between items-center">
+            <div class="flex items-center gap-2 pl-80 pt-12">
+                <img src="../dist/assets/calendar-2-line.svg" class="h-4 w-4  dark:bg-white  fill-white"/>
+                <p class="text-xl">My Schedule</p>
+            </div>
+            <div class="pr-80 pt-12">
+                <img src="../dist/assets/arrow-right-line.svg" class="h-8 w-8  dark:bg-white"/>
+            </div>
+        </div>
+        <div class="w-1/2 border-gray-200 rounded border mx-auto my-2 flex justify-center items-center flex-col">
+            <div class="flex gap-[20rem] py-4 px-4">
+                <div class="">
+                    <p>Tues, Jan 17 2023</p>
+                    <p class="font-bold">Shift name</p>
+                </div>
+                <div class="bg-red-100 flex rounded-full text-center items-center py-1 px-4">
+                    In 45 mins
+                </div>
+            </div>
+            <div class=" bg-gray-100 border-gray-200 rounded border mx-auto my-2 flex flex-col justify-start gap-4 px-4">
+                <div class="flex justify-between gap-96 items-center py-4 ">
+                    <p>07:00A-03:00P</p>
+                    <img src="../dist/assets/arrow-up-s-line.svg" class="h-6 w-6"/>
+                </div>
+                <div class="flex justify-start gap-[10rem]">
+                    <p>07:00-10:00</p>
+                    <p>Drive Thru</p>
+                </div>
+                <div class="flex justify-start gap-[10rem]">
+                    <p>07:00-10:00</p>
+                    <p>Drive Thru</p>
+                </div>
+                <div class="flex justify-start gap-[10rem]">
+                    <p>07:00-10:00</p>
+                    <p>Drive Thru</p>
+                </div>
+                <div class="flex justify-start gap-[10rem]">
+                    <p>07:00-10:00</p>
+                    <p>Drive Thru</p>
+                </div>
+                <div class="flex justify-start gap-[10rem]">
+                    <p>07:00-10:00</p>
+                    <p>Drive Thru</p>
+                </div>
+                <div class="pb-4">
+                    <p>Shift disclaimer lorem ipsum dolor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const btn = document.getElementById("theme-toggle");
+        btn.addEventListener("click", function () {
+            document.body.classList.toggle("dark");
+        });
+    </script>
+</body>
+</html>
